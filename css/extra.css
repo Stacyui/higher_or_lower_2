@@ -1,0 +1,303 @@
+/* -------- reset -------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, hr,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  letter-spacing: 0.06em; }
+
+p {
+  letter-spacing: 0.06em; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  margin: 0; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  /* for iOS, Android */ }
+
+main {
+  /* background-color: #8f8f8f; */
+  background-image: url(https://media.istockphoto.com/vectors/poker-table-background-in-green-color-vector-id1206505233?k=20&m=1206505233&s=612x612&w=0&h=QBYw3shQkcZG2g1qG8udx8nrUsqnPZNooSaLNIs5elo=);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sp-only {
+  display: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+li {
+  list-style: none; }
+
+a, button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  /* for iOS, Android */ }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+button {
+  padding: 0;
+  border-style: none;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 1; }
+
+input, select, textarea {
+  padding: 0;
+  border-style: none;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  line-height: 1; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%; }
+
+.ast {
+  font-family: sans-serif; }
+
+main {
+  padding: 50px; }
+
+.title-section {
+  margin-bottom: 40px;
+  text-align: center; }
+  .title-section-h1 {
+    color: #c9904b;
+    text-shadow: -4px -3px #8f6635;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+  .title-section .title-section-h1 img {
+    width: 150px;
+    height: auto;
+  }
+  .title-section-result {
+    color: #c9904b;
+    font-weight: bold;
+    font-size: 2.5rem; }
+
+.contents {
+  display: flex;
+  justify-content: center; }
+  .contents .panel {
+    min-width: 400px;
+    margin: 0 50px; }
+    .contents .panel-image-wrapper {
+      padding: 0 50px;
+      margin-bottom: 30px;}
+      .contents .panel-image-wrapper img {
+        max-width: 100%;
+        height: 100%; }
+        
+  .history {
+    padding: 10px;
+    background-color: #c9904b;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .history:visited {
+    color: #fff;
+  }
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .btn-wrapper .btn {
+    display: inline-flex;
+    justify-content: center;
+    min-width: 150px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s; }
+    .btn-wrapper .btn:hover {
+      opacity: .5; }
+    .btn-wrapper .btn.opt-blue {
+      background-color: #c9daf7; }
+    .btn-wrapper .btn.opt-red {
+      background-image: url(../common/img/others/higher_1900.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80px;
+    }
+    .btn-wrapper .btn.opt-green {
+      background-image: url(../common/img/others/lower.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80px;
+    }
+
+.history-table {
+  margin: 50px !important; 
+}
+
+tbody tr th {
+  padding: 7px 0;
+  text-transform: uppercase;
+}
+
+.title-section-h1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.sp-cards {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .sp-only {
+    display: block !important;
+  }
+
+  .pc-only {
+    display: none !important;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .title-section .title-section-h1 img {
+    width: 100px;
+    height: auto;
+  }
+
+  .sp-sides {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contents .panel {
+    min-width: auto;
+    margin: 0px;
+    height: 230px;
+  }
+
+  .sp-image-left {
+    padding: 0 10px 0 0 !important;
+  }
+
+  .sp-image-right {
+    padding: 0 0 0 10px !important;
+  }
+
+  .btn-wrapper .btn {
+    margin: 0;
+  }
+
+  form {
+    height: 165px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-wrapper .btn {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .btn-wrapper .btn.opt-red {
+    background-image: url(../common/img/others/sp_higher.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+  }
+
+  .btn-wrapper .btn.opt-green {
+    background-image: url(../common/img/others/sp_lower.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+  }
+
+  .history {
+    font-size: 12px;
+    text-transform: unset;
+    padding: 4px 8px;
+  }
+}
