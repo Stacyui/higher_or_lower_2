@@ -148,6 +148,7 @@
         <input type="hidden" name="cpuType" value="<?php echo $cpuType ?>">
         <input type="submit" class="btn opt-red" name="highSet" value="">
         <input type="submit" class="btn opt-green" name="lowSet" value="">
+        <p>test</p>
       </div>
     </form>
     
